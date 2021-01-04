@@ -7,7 +7,7 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '外は摂氏94度だった。だから:insertx:は散歩に出掛けた。 彼らが:inserty:に着いたとき、:insertz:。体重300キロの:insertx:は驚いたが、私は驚かなかった。:insertx:ではよくあることだからだ。';
+let storyText = '外は摂氏94度だった。だから:insertx:は散歩に出掛けた。 彼らが:inserty:に着いたとき、:insertz:。体重300キロの:insertx:は驚いたが、私は驚かなかった。:inserty:ではよくあることだからだ。';
 let insertX = ['まゆ','りと','みゆう'];
 let insertY = ['ディズニーランド','USJ','アメリカ'];
 let insertZ = ['とても寒かった','台風がやってきた','ナンパされた'];
@@ -22,7 +22,7 @@ function result() {
   let zItem = randomValueFromArray(insertZ);
   
   newStory = newStory.replace(':insertx:',xItem);
-  newStory = newStory.replace(':insertx:',xItem);
+  newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':inserty:',yItem);
   newStory = newStory.replace(':insertz:',zItem);
 
