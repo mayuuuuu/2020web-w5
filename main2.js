@@ -7,9 +7,9 @@ function randomValueFromArray(array){
   return array[random];
 }
 
-let storyText = '外は摂氏94度だった。だから:insertx:は散歩に出掛けた。 彼らが:inserty:に着いたとき、:insertz:。体重300キロの:insertx:は驚いたが、私は驚かなかった。:inserty:ではよくあることだからだ。';
-let insertX = ['まゆ','りと','みゆう'];
-let insertY = ['ディズニーランド','USJ','アメリカ'];
+let storyText = '何してんだおめえ…:insertx:なんかじろじろ見て…勉強終わったんか！…え？明日は:inserty:だって？！じゃ いってえ何で… べ 勉強サボって見る:insertx:は楽しい〜？！！と とんでもねえ野郎だな…でも おめえみたいなヤツ見てっと正直オラわっくわくすんだ！もっと聞かせてくれ！';
+let insertX = ['youtube','アニメ','サッカー'];
+let insertY = ['テスト本番','センター試験','TOEIC本番'];
 let insertZ = ['とても寒かった','台風がやってきた','ナンパされた'];
 
 randomize.addEventListener('click', result);
@@ -28,7 +28,7 @@ function result() {
 
   if(customName.value !== '') {
     const name = customName.value;
-    newStory = newStory.replace('私',name);
+    newStory = newStory.replace('おめえ',name);
   }
 
   if(document.getElementById("us").checked) {
