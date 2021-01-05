@@ -32,7 +32,7 @@ function result() {
     newStory = newStory.replace('私',name);
   }
 
-  if(document.getElementById("日本").checked) {
+  if(document.getElementById("nihon").checked) {
     const weight = Math.round(300*0.0714286) + ' キログラム';
     const temperature =  Math.round((94-32) * 5 / 9) + ' 度';
     newStory = newStory.replace('94度',temperature);
